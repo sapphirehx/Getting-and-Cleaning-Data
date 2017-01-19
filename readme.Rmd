@@ -1,0 +1,31 @@
+---
+title: "readme"
+author: "sapphirehx"
+date: "2017 Jan 18th"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Declaration
+
+This project is part of the Getting and Cleaning Data course provided by Johns Hopkins University.
+
+## Overview
+The run_analysis.R script was intended to conduct following work:
+
+1. Downloads themeasured activity datasets, which you can see here <http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones>, and set the working dir. 
+
+2. Data cleaning
+    i) Merges the training and the test sets to create one data set.
+    ii) Extracts only the measurements on the mean and standard deviation for each measurement.
+    iii) Uses descriptive activity names to name the activities in the data set
+    iv) Appropriately labels the data set with descriptive variable names.
+    v) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+  
+##Run this script on your own computer
+You need to change the workdir setting in line 3 for data downloading path, and line 7 for working dir path. 
+
+Also this script was written on a Windows OS computer, you need to change the mode settings in line 5 if you're using a Mac.
