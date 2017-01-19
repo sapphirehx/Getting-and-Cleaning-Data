@@ -21,22 +21,22 @@ The source datasets download link:<https://d396qusza40orc.cloudfront.net/getdata
 * read data sets
     + **training_set**  Training data set of dimension 7352*561 from "UCI HAR Dataset/train/X_train.txt", each row reperesents measurements, each column represent a feature 
     + **test_set** Test data set of dimension 2947*561 from "UCI HAR Dataset/test/X_test.txt""
-    + **subject_train** subject for training_set of dimension 7352*1 from "UCI HAR Dataset/train/subject_train.txt", each row represents a subject number  
-    + **subject_test** subject for test_set of dimension 2947*1 from 'UCI HAR Dataset/test/subject_test.txt'  
-    + **training_lable** activity label for training_set of dimension 7352*1 from'UCI HAR Dataset/train/y_train.txt', each row represents an activity number  
-    + **test_lable** activity label for test_set of dimension 2947*1 from'UCI HAR Dataset/test/y_test.txt'
-    + **features** measurement types of dimension 561*2 from'UCI HAR Dataset/features.txt', the 1st column is number, the second column is the measurement type names, also column names for the training/test datasets  
-    + **activity_labels** activity labels and corresponding names of dimension 6*2, the 1st column is the lables, and the 2nd column is the names, from 'UCI HAR Dataset/activity_labels.txt'))  
+    + **subject_train** Subject for training_set of dimension 7352*1 from "UCI HAR Dataset/train/subject_train.txt", each row represents a subject number  
+    + **subject_test** Subject for test_set of dimension 2947*1 from 'UCI HAR Dataset/test/subject_test.txt'  
+    + **training_lable** Activity label for training_set of dimension 7352*1 from'UCI HAR Dataset/train/y_train.txt', each row represents an activity number  
+    + **test_lable** Activity label for test_set of dimension 2947*1 from'UCI HAR Dataset/test/y_test.txt'
+    + **features** Measurement types of dimension 561*2 from'UCI HAR Dataset/features.txt', the 1st column is number, the second column is the measurement type names, also column names for the training/test datasets  
+    + **activity_labels** Activity labels and corresponding names of dimension 6*2, the 1st column is the lables, and the 2nd column is the names, from 'UCI HAR Dataset/activity_labels.txt'))  
   
 * Merges the training and the test sets to create one data set.
-    + **meterdata** training and test data sets merged, with subject and activity lables as the 1st and 2nd columns, of dimension 10299*563  
+    + **meterdata** Training and test data sets merged, with subject and activity lables as the 1st and 2nd columns, of dimension 10299*563  
     
 * Extracts only the measurements on the mean and standard deviation for each measurement.
-    + **sub_meterdata** only data of mean or std measurement types, with corresponding subject and activity lables as 1st and 2nd columns, of dimension 10299*68  
+    + **sub_meterdata** Data of mean or std measurement types, with corresponding subject and activity lables as 1st and 2nd columns, of dimension 10299*68  
     
 * Uses descriptive activity names to name the activities in the data set & Appropriately labels the data set with descriptive variable names.
-    + **des_meter** data of mean or std measurement types, with column names as measurement type listed in features and appropriately renamed, removing all '-' and changing 'mean()' to Mean, "std()" to Std, with corresponding subject and activity names as the 1st and last columns, of dimension 10299*68  
+    + **des_meter** Data of mean or std measurement types, with column names as measurement type listed in features and appropriately renamed, removing all '-' and changing 'mean()' to Mean, "std()" to Std, with corresponding subject and activity names as the 1st and last columns, of dimension 10299*68  
     
 * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-    + **avg_meter** data of avarage of mean/std measurements for each activity and each subject, of dimension 180*68, subject and activity names as the 1st and 2nd column, the other columns are all average of measurements.
-    + **avg_meter.txt** txt format output of data table avg_meter  
+    + **avg_meter** Data of avarage of mean/std measurements for each activity and each subject, of dimension 180*68, subject and activity names as the 1st and 2nd column, the other columns are all average of measurements.
+    + **avg_meter.txt** Txt format output of data table avg_meter  
